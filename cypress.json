@@ -1,0 +1,12 @@
+{
+    "experimentalStudio": true,
+    "defaultCommandTimeout": 5000,
+    "pageLoadTimeout" : 30000,
+    "video": true,
+    "chromeWebSecurity": false,
+    "reporter": "junit",
+        "reporterOptions": {
+            "mochaFile": "cypress/results/test-results.[hash].xml",
+            "toConsole": true
+            }
+}
