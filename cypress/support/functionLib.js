@@ -1,4 +1,5 @@
 //Module for common functions
+//This file was created as a simple demo
 
 function getDate(){
     let today = new Date();
