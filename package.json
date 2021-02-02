@@ -13,6 +13,7 @@
   "author": "Tom Millichamp",
   "license": "UNLICENSED",
   "devDependencies": {
-    "cypress": "^6.3.0"
+    "cypress": "^6.3.0",
+    "cypress-audit": "^0.3.0"
   }
 }

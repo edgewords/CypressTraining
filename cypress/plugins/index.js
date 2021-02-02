@@ -19,3 +19,20 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+/**
+ * This is for the cypress-audit plugin which is used to run google lighthouse perfromance/accessibility tests
+ * The following ensures that the lighthouse calls do not open a new browser but run inthe one that cypress has opened
+ */
+const { lighthouse, pa11y, prepareAudit } = require("cypress-audit");
+
+module.exports = (on, config) => {
+  on("before:browser:launch", (browser = {}, launchOptions) => {
+    prepareAudit(launchOptions);
+  });
+
+  on("task", {
+    lighthouse: lighthouse(), // calling the function is important
+    pa11y: pa11y(), // calling the function is important
+  });
+};
