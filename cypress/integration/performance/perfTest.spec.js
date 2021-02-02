@@ -31,6 +31,6 @@ describe('Performance Tests', function () {
 
         cy.visit('https://www.edgewordstraining.co.uk/webdriver2/');
         cy.lighthouse(customThresholds, desktopConfig); //Performance
-        //cy.pa11y(); //Accessibility
+        cy.pa11y(); //Accessibility
     });
 });
