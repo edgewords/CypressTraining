@@ -1,5 +1,6 @@
 These tests use the cypress-audit plugin: https://github.com/mfrachet/cypress-audit
 cypress-audit uses Google Lighthouse to run performance & accessibility tests on your site
+ensure you are using cypress >6.4.0
 
 Setup:
 1. Install the dependency:
@@ -31,7 +32,7 @@ it("should pass the audits", function () {
   cy.pa11y();
 });
 
-NOTES: This will only work with Chrome, and I found I needed to run in headless mode for some reason, so use:
+NOTES: This will only work with Chrome, and works nicely in headless mode:
 npx cypress run --browser chrome --headless --spec cypress\integration\performance\*.spec.js 
 
 Options to configure custom thresholds can be found here:
