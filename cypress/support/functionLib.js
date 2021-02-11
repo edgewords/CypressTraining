@@ -12,6 +12,18 @@ function getDate(){
     return (mm+dd+yyyy);
 }
 
+function createUserID(){
+    var text="";
+    var range="abcdefghijklmnopqrstuvwxyz";
+    for (var i=0;i<8;i++){
+        text += range.charAt(Math.floor(Math.random() * range.length));
+    }
+    return text;
+}
+
 //Export - ES6 format
 const _getDate = getDate;
-export { _getDate as getDate };
+const _createUserID = createUserID;
+export { _getDate as getDate,
+    _createUserID as createUserID };
+
