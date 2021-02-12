@@ -16,7 +16,7 @@ describe('async - sync', function () {
         cy.get('#right-column').contains('h1','Forms').should('exist');
     });
 
-    it('sync demo', function () {
+    it.only('sync demo', function () {
         cy.visit('https://www.edgewordstraining.co.uk/webdriver2');
         cy.title().should('equal', 'Automated Tools Test Site');
         cy.contains('Access Basic Examples Area').click();

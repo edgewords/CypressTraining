@@ -15,7 +15,7 @@ function getDate(){
 function createUserID(){
     var text="";
     var range="abcdefghijklmnopqrstuvwxyz";
-    for (var i=0;i<8;i++){
+    for (let i=0;i<8;i++){
         text += range.charAt(Math.floor(Math.random() * range.length));
     }
     return text;
