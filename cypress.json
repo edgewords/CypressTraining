@@ -1,5 +1,6 @@
 {
     "experimentalStudio": true,
+    "projectId": "rg5oq4",
     "defaultCommandTimeout": 5000,
     "pageLoadTimeout" : 30000,
     "video": true,
