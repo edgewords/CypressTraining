@@ -1,5 +1,5 @@
-
-// Use Node's 'require' method to load the test data:
+// Example of data-driving a test from fixtures data
+// Use Node's 'require' method to load the test data as we create the loop outside of the test context:
 const loginData = require('../../fixtures/userArray');
 
 describe('data-driven', function () {
