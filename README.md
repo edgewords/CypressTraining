@@ -1,7 +1,7 @@
-Completed Exercises examples, from our 'Introduction to Cypress' training course
-/api    - cy.request REST API examples
-/demos  - demos during training from extras chapter
-/exercises  - Solutions to course exercises
-/performance - Demo of using a plug-in that allows performance testing in Cypress
-/pom    - Page Object Model demo for course chapter
+Completed Exercises and examples, from our 'Introduction to Cypress' training course<br/><br/>
+/api    - cy.request REST API examples<br/>
+/demos  - demos during training from extras chapter<br/>
+/exercises  - Solutions to course exercises<br/>
+/performance - Demo of using a plug-in that allows performance testing in Cypress<br/>
+/pom    - Page Object Model demo for course chapter<br/><br/>
 See www.edgewordstraining.co.uk for more details
