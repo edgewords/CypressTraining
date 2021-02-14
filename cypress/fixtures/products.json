@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Tablet",
+        "price": 250
+    },
+    {
+        "name": "Mouse",
+        "price": 10
+    },
+    {
+        "name": "Track Pad",
+        "price": 25
+    }
+]
