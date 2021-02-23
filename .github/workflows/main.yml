@@ -41,8 +41,6 @@ jobs:
     runs-on: 	windows-latest
     strategy:
       fail-fast: false
-      matrix:
-        containers: [1, 2]
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -53,7 +51,6 @@ jobs:
         with:
           spec: cypress/integration/exercises/*.spec.js
           record: true
-          parallel: true
           group: Windows
           tag: GitHub_Action
         env:
